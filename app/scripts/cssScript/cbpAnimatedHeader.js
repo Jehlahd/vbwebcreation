@@ -1,3 +1,4 @@
+"use strict"
 /**
  * cbpAnimatedHeader.js v1.0.0
  * http://www.codrops.com
@@ -8,37 +9,36 @@
  * Copyright 2013, Codrops
  * http://www.codrops.com
  */
-var cbpAnimatedHeader = (function() {
+var cbpAnimatedHeader = (function () {
 
-	var docElem = document.documentElement,
-		header = document.querySelector( '.cbp-af-header' ),
-		didScroll = false,
-		changeHeaderOn = 300;
+    var docElem = document.documentElement,
+        header = document.querySelector('.cbp-af-header'),
+        didScroll = false,
+        changeHeaderOn = 80;
 
-	function init() {
-		window.addEventListener( 'scroll', function( event ) {
-			if( !didScroll ) {
-				didScroll = true;
-				setTimeout( scrollPage, 250 );
-			}
-		}, false );
-	}
+    function init() {
+        window.addEventListener('scroll', function (event) {
+            if (!didScroll) {
+                didScroll = true;
+                setTimeout(scrollPage, 250);
+            }
+        }, false);
+    }
 
-	function scrollPage() {
-		var sy = scrollY();
-		if ( sy >= changeHeaderOn ) {
-			classie.add( header, 'cbp-af-header-shrink' );
-		}
-		else {
-			classie.remove( header, 'cbp-af-header-shrink' );
-		}
-		didScroll = false;
-	}
+    function scrollPage() {
+        var sy = scrollY();
+        if (sy >= changeHeaderOn) {
+            classie.add(header, 'cbp-af-header-shrink');
+        } else {
+            classie.remove(header, 'cbp-af-header-shrink');
+        }
+        didScroll = false;
+    }
 
-	function scrollY() {
-		return window.pageYOffset || docElem.scrollTop;
-	}
+    function scrollY() {
+        return window.pageYOffset || docElem.scrollTop;
+    }
 
-	init();
+    init();
 
 })();

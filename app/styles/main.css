@@ -98,6 +98,19 @@ body {
     }
 }
 
+body {
+    padding-top: 80px;
+}
+
+body,
+input,
+select,
+button {
+    font-family: "Lato", sans-serif;
+    font-size: 17px;
+    color: #555;
+}
+
 
 /*-------------------------------------*/
 
@@ -222,7 +235,49 @@ body {
 
 .header {
     border-bottom: 0px;
+    margin-bottom: 10px;
 }
+
+.cbp-af-header-shrink {
+    opacity: 0.9;
+    transition: all 0.4s linear;
+    -webkit-transition: all 0.4s linear;
+}
+
+.navbar-inverse .navbar-brand {
+    font-family: "Damion", cursive;
+    font-size: 28px;
+    min-width: 120px;
+    color: #00A9FF;
+}
+
+
+/*-------------------------------------*/
+
+
+/*Overview*/
+
+.liquidapt-usage-each {
+    color: #fff;
+    overflow-x: hidden;
+}
+
+.liquidapt-usage-each:nth-of-type(odd) {
+    background-color: #555;
+}
+
+.liquidapt-usage-each:nth-of-type(even) {
+    background-color: #444;
+}
+
+
+/*-------------------------------------*/
+
+
+/*-------------------------------------*/
+
+
+/*-------------------------------------*/
 
 
 /* Helpers: Typography */
