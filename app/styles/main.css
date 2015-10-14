@@ -270,6 +270,53 @@ button {
     background-color: #444;
 }
 
+.liquidapt-usage-info ul {
+    font-weight: 300;
+    padding: 20px;
+}
+
+@media only screen and (min-width: 700px) {
+    .liquidapt-usage-each {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: row;
+        flex-direction: row;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+    .liquidapt-usage-each:nth-of-type(even) {
+        -webkit-flex-direction: row-reverse;
+        flex-direction: row-reverse;
+    }
+    .liquidapt-usage-info,
+    .liquidapt-usage-img {
+        float: left;
+        width: 50%;
+        -webkit-flex-shrink: 0;
+        flex-shrink: 0;
+    }
+    .liquidapt-usage-each:nth-of-type(even) .liquidapt-usage-info {
+        float: right;
+    }
+    .liquidapt-usage-info ul {
+        font-size: 120%;
+    }
+    .liquidapt-usage-each:nth-of-type(odd) .liquidapt-usage-info ul {
+        text-align: right;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.full-width {
+    display: block;
+    width: 100%;
+}
+
 
 /*-------------------------------------*/
 
