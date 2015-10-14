@@ -26,6 +26,9 @@ module.exports = function(config) {
       'bower_components/angular/angular.js',
       'bower_components/bootstrap/dist/js/bootstrap.js',
       'bower_components/angular-animate/angular-animate.js',
+      'bower_components/eventEmitter/EventEmitter.js',
+      'bower_components/eventie/eventie.js',
+      'bower_components/imagesloaded/imagesloaded.js',
       'bower_components/angular-mocks/angular-mocks.js',
       // endbower
       "app/scripts/**/*.js",

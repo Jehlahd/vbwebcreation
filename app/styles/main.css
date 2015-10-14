@@ -1,83 +1,324 @@
 .browsehappy {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
 }
 
 body {
-  padding: 0;
+    padding: 0;
 }
 
+
 /* Everything but the jumbotron gets side spacing for mobile first views */
+
 .header,
 .marketing,
 .footer {
-  padding-left: 15px;
-  padding-right: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
+
 
 /* Custom page header */
+
 .header {
-  border-bottom: 1px solid #e5e5e5;
-  margin-bottom: 10px;
-}
-/* Make the masthead heading the same height as the navigation */
-.header h3 {
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: 40px;
-  padding-bottom: 19px;
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 10px;
 }
 
+
+/* Make the masthead heading the same height as the navigation */
+
+.header h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+    padding-bottom: 19px;
+}
+
+
 /* Custom page footer */
+
 .footer {
-  padding-top: 19px;
-  color: #777;
-  border-top: 1px solid #e5e5e5;
+    padding-top: 19px;
+    color: #777;
+    border-top: 1px solid #e5e5e5;
 }
 
 .container-narrow > hr {
-  margin: 30px 0;
+    margin: 30px 0;
 }
+
 
 /* Main marketing message and sign up button */
+
 .jumbotron {
-  text-align: center;
-  border-bottom: 1px solid #e5e5e5;
+    text-align: center;
+    border-bottom: 1px solid #e5e5e5;
 }
+
 .jumbotron .btn {
-  font-size: 21px;
-  padding: 14px 24px;
+    font-size: 21px;
+    padding: 14px 24px;
 }
+
 
 /* Supporting marketing content */
+
 .marketing {
-  margin: 40px 0;
+    margin: 40px 0;
 }
+
 .marketing p + h4 {
-  margin-top: 28px;
+    margin-top: 28px;
 }
+
 
 /* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 730px;
-  }
 
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
-  }
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
-  }
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 730px;
+    }
+    /* Remove the padding we set earlier */
+    .header,
+    .marketing,
+    .footer {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    /* Space out the masthead */
+    .header {
+        margin-bottom: 30px;
+    }
+    /* Remove the bottom border on the jumbotron for visual effect */
+    .jumbotron {
+        border-bottom: 0;
+    }
+}
+
+
+/*-------------------------------------*/
+
+
+/*BANNER*/
+
+.banner-img-block {
+    margin: 0 auto 25px auto;
+    width: 840px;
+}
+
+.banner-img {
+    float: left;
+    box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.2);
+    position: relative;
+    width: 280px;
+    transform: scale(0.85);
+    transform: scale(0.85);
+    -webkit-transform-origin: top;
+}
+
+.banner-img-animate {
+    transition: all 0.4s linear 0.8s;
+    -webkit-transition: all 0.4s linear 0.8s;
+}
+
+.banner-img-1 {
+    top: 40px;
+    left: 280px;
+    transform: scale(0.78);
+    -webkit-transform: scale(0.78);
+    z-index: 2;
+}
+
+.banner-img-1.banner-img-animate {
+    left: 10px;
+    top: 55px;
+    transform: scale(0.85);
+    -webkit-transform: scale(0.85);
+}
+
+.banner-img-2 {
+    transform: scale(0.85);
+    -webkit-transform: scale(0.85);
+    z-index: 3;
+}
+
+.banner-img-2.banner-img-animate {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+}
+
+.banner-img-3 {
+    top: 80px;
+    right: 280px;
+    transform: scale(0.71);
+    -webkit-transform: scale(0.71);
+    z-index: 1;
+}
+
+.banner-img-3.banner-img-animate {
+    right: 10px;
+    transform: scale(0.85);
+    -webkit-transform: scale(0.85);
+    top: 55px;
+}
+
+
+/*-------------------------------------*/
+
+
+/*BackGround*/
+
+.background-block {
+    color: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 40px 0;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.background-block-content {
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+.background-block-content a {
+    color: #fff;
+    border-bottom: 1px solid;
+}
+
+
+/*-------------------------------------*/
+
+
+/*Contact*/
+
+.background--location {
+    background-image: url(../images/contact/location.jpg);
+}
+
+
+/*-------------------------------------*/
+
+
+/*Header*/
+
+.background--header {
+    background-image: url(../images/bg/dark-sharp-edges.png);
+}
+
+.header {
+    border-bottom: 0px;
+}
+
+
+/* Helpers: Typography */
+
+.heading-primary {
+    font-size: 220%;
+    font-weight: 300;
+    font-family: inherit;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.heading-secondary {
+    font-size: 130%;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 20px 0;
+}
+
+.sub-heading {
+    font-style: italic;
+    text-align: center;
+    padding: 0 0 20px 0;
+}
+
+.heading-block [class|="heading"] {
+    padding-bottom: 0;
+}
+
+.ul-base {
+    padding: 0;
+    list-style-type: none;
+}
+
+.font-small {
+    font-size: 90%;
+}
+
+.font-smaller {
+    font-size: 80%;
+}
+
+.font-smallest {
+    font-size: 70%;
+}
+
+.font-large {
+    font-size: 110%;
+}
+
+.font-larger {
+    font-size: 120%;
+}
+
+.font-largest {
+    font-size: 130%;
+}
+
+
+/* Helpers: Centering */
+
+.center {
+    text-align: center;
+}
+
+.center-element {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.vertical-center {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.dead-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+
+/* Contact: Google Map */
+
+.map-google-embed iframe {
+    width: 100%;
+    display: block;
+}
+
+.map-google-embed img {
+    max-width: none;
 }
