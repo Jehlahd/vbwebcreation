@@ -9,11 +9,12 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel='stylesheet' href='bower_components/bootstrap/dist/css/bootstrap.css' />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/animate.css">
     <link href='http://fonts.googleapis.com/css?family=Damion|Lato:400,300,400italic,700,700italic|Merriweather:400,700' rel='stylesheet' type='text/css'>
     <!-- endbuild -->
 </head>
@@ -58,10 +59,6 @@
         <img src="images/banner/selvin-escape-velocity.jpg" alt="Banner Home: 3" class="banner-img banner-img-3" width="280">
     </div>
 
-    <div class="container">
-        <h1>Contact</h1>
-    </div>
-
     <div class="background-block background--location">
         <div class="background-block-content">
             <div class="heading-block">
@@ -79,12 +76,12 @@
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2903.083082516201!2d5.572863915486729!3d43.31252017913456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c9a2d90792da99%3A0xa0ab80eb8637a6a4!2sTraverse+du+Grand+Ch%C3%AAne%2C+13400+Aubagne!5e0!3m2!1sfr!2sfr!4v1444760968160" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
 
-
+    <!-- TEST-->
     <section>
         <h2 class="heading-secondary">Why use LiquidApt?</h2>
-        <div class="liquidapt-usage-block">
-            <div class="liquidapt-usage-each clearfix">
-                <div class="liquidapt-usage-info">
+        <div class="product-usage-block">
+            <div class="product-usage-each clearfix">
+                <div class="product-usage-info">
                     <ul class="wow slideInLeft">
                         <li>12 gorgeous, responsive themes</li>
                         <li>1-4 new themes released every month</li>
@@ -92,14 +89,13 @@
                     </ul>
                 </div>
 
-                <div class="liquidapt-usage-img">
+                <div class="product-usage-img">
                     <img src="http://placehold.it/350x300" class=" wow slideInRight">
                 </div>
             </div>
-            <!-- /liquidapt-usage-each -->
 
-            <div class="liquidapt-usage-each clearfix">
-                <div class="liquidapt-usage-info">
+            <div class="product-usage-each clearfix">
+                <div class="product-usage-info">
                     <ul class="wow slideInRight">
                         <li>3 themes for an admin interface or dashboard</li>
                         <li>Add bar, pie, bubble charts and more!</li>
@@ -107,14 +103,13 @@
                     </ul>
                 </div>
 
-                <div class="liquidapt-usage-img">
-                    <img src="http://placehold.it/350x300" alt="theme-dashboard" class=" wow slideInLeft">
+                <div class="product-usage-img">
+                    <img src="http://placehold.it/350x300" alt="theme-dashboard" class="wow slideInLeft">
                 </div>
             </div>
-            <!-- /liquidapt-usage-each -->
 
-            <div class="liquidapt-usage-each clearfix">
-                <div class="liquidapt-usage-info">
+            <div class="product-usage-each clearfix">
+                <div class="product-usage-info">
                     <ul class="wow slideInLeft">
                         <li>Edit your site on the go!</li>
                         <li>Log into our CMS from any device!</li>
@@ -122,15 +117,41 @@
                     </ul>
                 </div>
 
-                <div class="liquidapt-usage-img">
+                <div class="product-usage-img">
                     <img src="http://placehold.it/350x300" alt="Edit liquidapt on the go" class=" wow slideInRight">
                 </div>
             </div>
-            <!-- /liquidapt-usage-each -->
         </div>
-        <!-- /liquidapt-usage-block -->
     </section>
 
+    <br>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="product col-sm-6">
+                <ul class="wow slideInLeft">
+                    <li>12 gorgeous, responsive themes</li>
+                    <li>1-4 new themes released every month</li>
+                    <li>Starter theme for coders who want complete control</li>
+                </ul>
+
+            </div>
+
+            <div class="product col-sm-6">
+                <ul class="wow slideInRight">
+                    <li>12 gorgeous, responsive themes</li>
+                    <li>1-4 new themes released every month</li>
+                    <li>Starter theme for coders who want complete control</li>
+                    <li>3 themes for an admin interface or dashboard</li>
+                    <li>Add bar, pie, bubble charts and more!</li>
+                    <li>Impress clients with superb visuals for stats</li>
+                </ul>
+
+            </div>
+        </div>
+
+
+    </div>
 
 
     <div class="footer background--header">
@@ -162,6 +183,7 @@
     <script src="bower_components/eventEmitter/EventEmitter.js"></script>
     <script src="bower_components/eventie/eventie.js"></script>
     <script src="bower_components/imagesloaded/imagesloaded.js"></script>
+    <script src="bower_components/wow/dist/wow.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -172,6 +194,10 @@
     <script src="scripts/cssScript/cbpAnimatedHeader.js"></script>
     <script src="scripts/cssScript/classie.js"></script>
     <!-- endbuild -->
+
+    <script>
+        new WOW().init();
+    </script>
 </body>
 
 </html>
