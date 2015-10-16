@@ -213,6 +213,13 @@ button {
     border-bottom: 1px solid;
 }
 
+.background-block-content a:hover {
+    color: #fff;
+    font-style: italic;
+    text-decoration: none;
+    color: #00A9FF;
+}
+
 
 /*-------------------------------------*/
 
@@ -223,14 +230,23 @@ button {
     background-image: url(../images/contact/location.jpg);
 }
 
+.contact-block {
+    margin-top: 40px;
+}
+
 
 /*-------------------------------------*/
 
 
 /*Header*/
 
+header {
+    z-index: 5;
+}
+
 .background--header {
     background-image: url(../images/bg/dark-sharp-edges.png);
+    z-index: 5;
 }
 
 .header {
@@ -251,71 +267,56 @@ button {
     color: #00A9FF;
 }
 
+.navbar-inverse .navbar-brand:hover,
+.navbar-inverse .navbar-brand:visited {
+    font-family: "Damion", cursive;
+    font-size: 28px;
+    min-width: 120px;
+    color: #00A9FF;
+}
+
+.nav-active {
+    border-bottom: 3px solid #00A9FF;
+}
+
+.nav li.nav-active a {
+    color: #fff;
+    font-weight: 700;
+}
+
 
 /*-------------------------------------*/
 
 
 /*Overview*/
 
-.product-usage-each {
+.background-block2 {
     color: #fff;
-    overflow-x: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 300px;
 }
 
-.product-usage-each:nth-of-type(odd) {
-    background-color: #555;
+.background--responsive {
+    background-image: url(../images/Products/responsive-web-design.png);
 }
 
-.product-usage-each:nth-of-type(even) {
-    background-color: #444;
+.background--webdesign {
+    background-image: url(../images/Products/tendance_webdesign.jpg);
 }
 
-.product-usage-info ul {
-    font-weight: 300;
-    padding: 20px;
-    margin-left: 10px;
+.background--css {
+    background-image: url(../images/Products/css.jpg);
 }
 
-@media only screen and (min-width: 700px) {
-    .product-usage-each {
-        display: -webkit-flex;
-        display: flex;
-        -webkit-flex-direction: row;
-        flex-direction: row;
-        -webkit-align-items: center;
-        align-items: center;
-    }
-    .product-usage-each:nth-of-type(even) {
-        -webkit-flex-direction: row-reverse;
-        flex-direction: row-reverse;
-    }
-    .product-usage-info,
-    .product-usage-img {
-        float: left;
-        width: 50%;
-        -webkit-flex-shrink: 0;
-        flex-shrink: 0;
-    }
-    .product-usage-each:nth-of-type(even) .product-usage-info {
-        float: right;
-    }
-    .product-usage-info ul {
-        font-size: 120%;
-    }
-    .product-usage-each:nth-of-type(odd) .liquidapt-usage-info ul {
-        text-align: right;
-    }
+.background--repair {
+    background-image: url(../images/Products/Computer-Repair-Services.jpg);
 }
 
-.clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.full-width {
-    display: block;
-    width: 100%;
+.product-container {
+    margin-top: 10px;
 }
 
 .product {
@@ -324,8 +325,17 @@ button {
     height: 300px;
 }
 
+.product ul {
+    font-weight: 300;
+    padding: 20px;
+    margin-left: 10px;
+    font-size: 120%;
+    vertical-align: middle;
+}
+
 .product:nth-of-type(odd) {
     background-color: #555;
+    text-align: right;
 }
 
 .product:nth-of-type(even) {
@@ -434,6 +444,7 @@ button {
 .map-google-embed iframe {
     width: 100%;
     display: block;
+    pointer-events: none;
 }
 
 .map-google-embed img {
