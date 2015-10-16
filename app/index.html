@@ -41,7 +41,6 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="nav-active"><a href="#top">Accueil</a></li>
                         <li><a href="#products">Nos Produits</a></li>
                         <li><a href="#contact-us">Contact</a></li>
                     </ul>
@@ -50,7 +49,6 @@
             </div>
             <!-- /.container-fluid -->
         </nav>
-
     </header>
     <div class="banner-img-block clearfix" ng-controller="BannerCtrl">
         <img src="images/banner/jason-photon.jpg" alt="Banner Home: 1" class="banner-img banner-img-1" width="280">
@@ -182,9 +180,9 @@
 
     <script>
         new WOW().init();
-        $(".nav a").on("click", function () {
-            $(".nav").find(".nav-active").removeClass("nav-active");
-            $(this).parent().addClass("nav-active");
+        $('body').scrollspy({
+            target: '.navbar',
+            offset: 0
         });
     </script>
 </body>

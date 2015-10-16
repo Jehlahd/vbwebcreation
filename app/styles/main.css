@@ -118,7 +118,7 @@ button {
 /*BANNER*/
 
 .banner-img-block {
-    margin: 0 auto 25px auto;
+    margin: 25px auto 25px auto;
     width: 840px;
 }
 
@@ -280,6 +280,19 @@ header {
 }
 
 .nav li.nav-active a {
+    color: #fff;
+    font-weight: 700;
+}
+
+.active {
+    border-bottom: 3px solid #00A9FF;
+}
+
+.nav li.active {
+    background-color: red;
+}
+
+.nav li.active a {
     color: #fff;
     font-weight: 700;
 }
