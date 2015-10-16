@@ -288,13 +288,15 @@ header {
     border-bottom: 3px solid #00A9FF;
 }
 
-.nav li.active {
-    background-color: red;
-}
-
 .nav li.active a {
     color: #fff;
     font-weight: 700;
+}
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+    background-color: transparent;
 }
 
 
