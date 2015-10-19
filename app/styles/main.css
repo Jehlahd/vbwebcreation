@@ -455,6 +455,18 @@ header {
     transform: translateX(-50%) translateY(-50%);
 }
 
+.icon-round-wrap {
+    border: 2px solid #00A9FF;
+    font-size: 20px;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
 
 /* Contact: Google Map */
 

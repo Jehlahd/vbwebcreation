@@ -15,6 +15,7 @@
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/animate.css">
+    <link rel="stylesheet" href="styles/font-icons/style.css">
     <link href='http://fonts.googleapis.com/css?family=Damion|Lato:400,300,400italic,700,700italic|Merriweather:400,700' rel='stylesheet' type='text/css'>
     <!-- endbuild -->
 </head>
@@ -50,10 +51,12 @@
             <!-- /.container-fluid -->
         </nav>
     </header>
-    <div class="banner-img-block clearfix" ng-controller="BannerCtrl">
-        <img src="images/banner/jason-photon.jpg" alt="Banner Home: 1" class="banner-img banner-img-1" width="280">
-        <img src="images/banner/ramesh-parallelism.jpg" alt="Banner Home: 2" class="banner-img banner-img-2" width="280">
-        <img src="images/banner/selvin-escape-velocity.jpg" alt="Banner Home: 3" class="banner-img banner-img-3" width="280">
+    <div class="container-fluid">
+        <div class="banner-img-block clearfix hidden-xs" ng-controller="BannerCtrl">
+            <img src="images/banner/jason-photon.jpg" alt="Banner Home: 1" class="banner-img banner-img-1" width="280">
+            <img src="images/banner/ramesh-parallelism.jpg" alt="Banner Home: 2" class="banner-img banner-img-2" width="280">
+            <img src="images/banner/selvin-escape-velocity.jpg" alt="Banner Home: 3" class="banner-img banner-img-3" width="280">
+        </div>
     </div>
 
 
@@ -66,12 +69,12 @@
             <div class="background-block2 background--webdesign wow slideInLeft col-sm-6"></div>
             <div class="product col-sm-6">
                 <ul class="wow slideInRight list-unstyled">
-                    <li>12 gorgeous, responsive themes</li>
-                    <li>1-4 new themes released every month</li>
-                    <li>Starter theme for coders who want complete control</li>
-                    <li>3 themes for an admin interface or dashboard</li>
-                    <li>Add bar, pie, bubble charts and more!</li>
-                    <li>Impress clients with superb visuals for stats</li>
+                    <li>Création de sites web, hébergements et modifications et évolutions de sites existants</li>
+                    <li>Vos idées, vos besoins, un site à votre image</li>
+                    <li>Votre création, du developpement au déploiement</li>
+                    <li>Un suivi poussé, vous être maître de votre projet </li>
+                    <li>Profitez des dernières technologies: HTML5, CSS3, Angular, Node...</li>
+                    <li>5 ans d'expertise pour vous permettre de réaliser votre projet</li>
                 </ul>
             </div>
         </div>
@@ -80,12 +83,9 @@
 
             <div class="product col-sm-6">
                 <ul class="wow slideInLeft list-unstyled">
-                    <li>12 gorgeous, responsive themes</li>
-                    <li>1-4 new themes released every month</li>
-                    <li>Starter theme for coders who want complete control</li>
-                    <li>3 themes for an admin interface or dashboard</li>
-                    <li>Add bar, pie, bubble charts and more!</li>
-                    <li>Impress clients with superb visuals for stats</li>
+                    <li>Trouver le design parfait pour votre site</li>
+                    <li>Des modèles personnalisables pour répondre à tous vos besoins</li>
+                    <li>Une âme d'artiste ? Intégrez vos créations à votre site</li>
                 </ul>
             </div>
             <div class="background-block2 background--css wow slideInRight col-sm-6"></div>
@@ -94,9 +94,8 @@
             <div class="background-block2 background--responsive wow slideInLeft col-sm-6"></div>
             <div class="product col-sm-6">
                 <ul class="wow slideInRight list-unstyled">
-                    <li>12 gorgeous, responsive themes</li>
-                    <li>1-4 new themes released every month</li>
-                    <li>Starter theme for coders who want complete control</li>
+                    <li>Responsive Design</li>
+                    <li>Pc, téléphones, tablette. Votre site s'adapte à tous les devices.</li>
                 </ul>
             </div>
         </div>
@@ -105,12 +104,15 @@
 
             <div class="product col-sm-6">
                 <ul class="wow slideInLeft list-unstyled">
-                    <li>12 gorgeous, responsive themes</li>
-                    <li>1-4 new themes released every month</li>
-                    <li>Starter theme for coders who want complete control</li>
-                    <li>3 themes for an admin interface or dashboard</li>
-                    <li>Add bar, pie, bubble charts and more!</li>
-                    <li>Impress clients with superb visuals for stats</li>
+                    <li>Services informatiques</li>
+                    <li>Dépannage d'ordinateurs à domicile, particuliers et pros</li>
+                    <li>Découverte de votre PC</li>
+                    <li>Nettoyage, protection, virus</li>
+                    <li>Réinstallation et Sauvegarde de vos données</li>
+                    <li>Récupération de mots de passe</li>
+                    <li>Internet / Réseau</li>
+
+
                 </ul>
             </div>
             <div class="background-block2 background--repair wow slideInRight col-sm-6"></div>
@@ -121,12 +123,14 @@
     <div id="contact-us" class="contact-block background-block background--location">
         <div class="background-block-content">
             <div class="heading-block">
-                <h1 class="heading-primary center">Nous contacter</h1>
-                <div class="sub-heading">Situé à Aubagne, nous nous déplaçons pour répondre à vos attentes</div>
+                <h1 class="heading-primary center">Me contacter</h1>
+                <div class="sub-heading">Situé à Aubagne, je me déplace pour répondre à vos attentes</div>
             </div>
             <h2 class="heading-secondary center">Coordonnées</h2>
-            <p class="center"><span class="glyphicon glyphicon-phone" aria-hidden="true"></span><a href="tel:+33688791618">06.88.79.16.18</a></p>
-            <p class="center"><span class="glyphicon glyphicon-envelope" aria-hidden="true"> <a href="mailto:vincent.boudewyn@gmail.com">vincent.boudewyn@gmail.com</a></p>
+
+
+            <p class="center"><span class="icon-round-wrap"><span class="icon-mobile dead-center"></span></span><a href="tel:+33688791618">06.88.79.16.18</a></p>
+            <p class="center"><span class="icon-round-wrap"><span class="icon-envelope dead-center"></span></span><a href="mailto:vincent.boudewyn@gmail.com">vincent.boudewyn@gmail.com</a></p>
         </div>
         <div class="overlay"></div>
     </div>
@@ -138,7 +142,7 @@
 
     <div class="footer background--header">
         <div class="container">
-            <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
+            <p class="center font-smallest"><span class="glyphicon glyphicon-stats"></span> Siret: 813 265 527 00016</p>
         </div>
     </div>
 
