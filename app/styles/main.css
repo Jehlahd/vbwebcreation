@@ -379,13 +379,6 @@ header {
     padding: 40px 0;
 }
 
-.heading-primary2 {
-    font-size: 220%;
-    font-weight: 300;
-    font-family: inherit;
-    text-align: center;
-}
-
 .heading-secondary {
     font-size: 130%;
     text-align: center;
@@ -397,11 +390,6 @@ header {
     font-style: italic;
     text-align: center;
     padding: 0 0 20px 0;
-}
-
-.sub-heading1 {
-    font-style: italic;
-    text-align: center;
 }
 
 .heading-block [class|="heading"] {
