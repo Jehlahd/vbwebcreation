@@ -438,13 +438,8 @@ module.exports = function (grunt) {
     'karma'
   ]);
 
-<<<<<<< HEAD
     grunt.registerTask('build', [
     'clean:dist',
-=======
-  grunt.registerTask('build', [
-    //'clean:dist',
->>>>>>> parent of ee37609... test69
     'wiredep',
     'useminPrepare',
     'concurrent:dist',
