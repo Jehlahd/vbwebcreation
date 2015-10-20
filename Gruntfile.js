@@ -471,7 +471,6 @@ module.exports = function (grunt) {
 });
 
 grunt.registerTask('heroku:production', [
-    'bower:install',
     'build'
 ]);
 };
