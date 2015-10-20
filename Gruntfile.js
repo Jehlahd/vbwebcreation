@@ -461,9 +461,8 @@ module.exports = function (grunt) {
     'test',
     'build'
   ]);
-};
-
-grunt.initConfig({
+  
+  grunt.initConfig({
   bower: {
     install: {
        //just run 'grunt bower:install' and you'll see files from your Bower packages in lib directory
@@ -475,3 +474,5 @@ grunt.registerTask('heroku:production', [
     'bower:install',
     'build'
 ]);
+};
+
